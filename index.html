@@ -1,302 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="generator" content="made with love by dartdoc 6.2.1">
-  <meta name="description" content="travela API docs, for the Dart programming language.">
-  <title>travela - Dart API docs</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1, user-scalable=no"
+    />
+    <meta name="generator" content="made with love by dartdoc 6.2.1" />
+    <meta
+      name="description"
+      content="travela API docs, for the Dart programming language."
+    />
+    <title>travela - Dart API docs</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+      rel="stylesheet"
+    />
 
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
-  
-  <link rel="stylesheet" href="static-assets/github.css?v1">
-  <link rel="stylesheet" href="static-assets/styles.css?v1">
-  <link rel="icon" href="static-assets/favicon.png?v1">
+    <link rel="stylesheet" href="static-assets/github.css?v1" />
+    <link rel="stylesheet" href="static-assets/styles.css?v1" />
+    <link rel="icon" href="static-assets/favicon.png?v1" />
+  </head>
 
-  
-</head>
+  <body data-base-href="" data-using-base-href="false" class="light-theme">
+    <div id="overlay-under-drawer"></div>
 
+    <header id="title">
+      <span
+        id="sidenav-left-toggle"
+        class="material-symbols-outlined"
+        role="button"
+        tabindex="0"
+        >menu</span
+      >
+      <ol class="breadcrumbs gt-separated dark hidden-xs">
+        <li class="self-crumb">travela package</li>
+      </ol>
+      <div class="self-name">travela</div>
+      <form class="search navbar-right" role="search">
+        <input
+          type="text"
+          id="search-box"
+          autocomplete="off"
+          disabled
+          class="form-control typeahead"
+          placeholder="Loading search..."
+        />
+      </form>
+      <div class="toggle" id="theme-button">
+        <label for="theme">
+          <input type="checkbox" id="theme" value="light-theme" />
+          <span id="dark-theme-button" class="material-symbols-outlined">
+            brightness_4
+          </span>
+          <span id="light-theme-button" class="material-symbols-outlined">
+            brightness_5
+          </span>
+        </label>
+      </div>
+    </header>
+    <main>
+      <div id="dartdoc-main-content" class="main-content">
+        <section class="desc markdown">
+          <h1 id="travela">travela</h1>
+          <p>
+            <a href="https://github.com/asdfghjkxd/travela/releases/"
+              ><img
+                src="https://img.shields.io/github/release/asdfghjkxd/travela?include_prereleases=&amp;sort=semver&amp;color=blue"
+                alt="GitHub release"
+            /></a>
+            <a href="#license"
+              ><img
+                src="https://img.shields.io/badge/License-MIT-blue"
+                alt="License"
+            /></a>
+            <a href="https://github.com/asdfghjkxd/travela/issues"
+              ><img
+                src="https://img.shields.io/github/issues/asdfghjkxd/travela"
+                alt="issues - travela"
+            /></a>
+            <a href="https://codecov.io/gh/asdfghjkxd/travela"
+              ><img
+                src="https://codecov.io/gh/asdfghjkxd/travela/branch/main/graph/badge.svg?token=3YB2NRDEGM"
+                alt="codecov"
+            /></a>
+          </p>
+          <blockquote>
+            <p>Your collaborative trip planner app!</p>
+          </blockquote>
+          <p align="center"></p>
+          <h2 id="made-with">Made With</h2>
+          <p align="center">
+            <a href="https://dart.dev/"
+              ><img
+                src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&amp;logo=dart&amp;logoColor=white"
+            /></a>
+            <a href="https://firebase.google.com/"
+              ><img
+                src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&amp;logo=Firebase&amp;logoColor=white"
+            /></a>
+            <a href="https://flutter.dev/"
+              ><img
+                src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&amp;logo=Flutter&amp;logoColor=white"
+            /></a>
+          </p>
+          <p></p>
+          <p align="center">
+            <a href="https://codecov.io/gh/asdfghjkxd/travela">
+              <img
+                src="https://codecov.io/gh/asdfghjkxd/travela/branch/main/graph/badge.svg?token=3YB2NRDEGM"
+              />
+            </a>
+          </p>
+          <h2 id="table-of-contents">Table of Contents</h2>
+          <ul>
+            <li>
+              <a href="https://github.com/asdfghjkxd/travela#about">About</a>
+            </li>
+            <li>
+              <a href="https://github.com/asdfghjkxd/travela#features"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/asdfghjkxd/travela#install"
+                >Install</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/asdfghjkxd/travela#usage">Usage</a>
+            </li>
+            <li>
+              <a href="https://github.com/asdfghjkxd/travela#issues-and-bugs"
+                >Issues and Bugs</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/asdfghjkxd/travela#license"
+                >License</a
+              >
+            </li>
+          </ul>
+          <h2 id="about">About</h2>
+          <p>
+            Want to plan a trip with your friends, but you guys just can't
+            decide on what places to visit? Or perhaps you guys cannot seem to
+            find a way to track your expenses on your trip? Or maybe you guys
+            just cannot seem to find the right time to come together to
+            throughly plan out the trip?
+          </p>
+          <p>Well, fear no more, for <strong>travela</strong> is here!</p>
+          <p>
+            Our app allows you to quickly and seamlessly collaborate with your
+            friends to plan out your trip in detail, from minutae such as how to
+            obtain the local public transport card, to the big ticket items such
+            as your plane tickets and hotel bookings.
+          </p>
+          <p>
+            It also allows you to track your expenses by setting trip-specific
+            budgets, eliminating the mental gymnastics needed to calculate the
+            amount of money one owes another in the group; it is all in the app!
+          </p>
+          <p>
+            So, what are you waiting for? Download the app now and start your
+            next great adventure!
+          </p>
+          <h2 id="features">Features</h2>
+          <p>Some of the features of the app include:</p>
+          <ul>
+            <li>
+              <strong>User Authentication and Customisation</strong>
+              <ul>
+                <li>
+                  Log in securely with Firebase Authentication, using your
+                  favourite and trusted Accounts from Google, Apple and Facebook
+                </li>
+                <li>
+                  Seamlessly collaborate with other users of the app in
+                  real-time
+                </li>
+                <li>
+                  Customise your profile to make the experience uniquely yours
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Document Organisation</strong>
+              <ul>
+                <li>
+                  Upload your important travel documents and access them on the
+                  go
+                </li>
+                <li>
+                  Label documents and group documents up into folders for
+                  greater organisation of your most important travel documents
+                </li>
+                <li>
+                  Protect your most sensitive data by encrypting your data with
+                  a password or with your device's biometric scanners
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Expenditure Tracking</strong>
+              <ul>
+                <li>
+                  Set trip budgets and set alerts and reminders to stay on
+                  budget
+                </li>
+                <li>
+                  Track expenses for your trips by creating expense entries for
+                  said trip
+                </li>
+                <li>
+                  Visualise your expenses with easy-to-understand charts and
+                  graphs
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Itinerary Planning</strong>
+              <ul>
+                <li>
+                  Location-based suggestions on possible places of interest
+                  depending on the location of your trip
+                </li>
+                <li>
+                  Discuss and share potential places of interest to visit for
+                  future trips with <strong>Idea Boards</strong>
+                </li>
+                <li>Plan out your trip in detail with your loved ones</li>
+                <li>
+                  Integration with Google Maps to visualise the routes to take
+                  while on your trip
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Weather Forecasting</strong>
+              <ul>
+                <li>
+                  Find out more about the weather conditions at your destination
+                  to allow for better planning
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            To find out more, click
+            <a href="https://github.com/asdfghjkxd/travela/wiki">here</a> to go
+            to the Wiki where more information about the design choices and
+            documentation of the features are located at!
+          </p>
+          <p>
+            Alternatively, you may navigate to the folders nested within
+            <a href="lib"><code>lib</code></a> and read the
+            <code>README.md</code> files for more information about the files
+            and classes within the folder!
+          </p>
+          <h2 id="install">Install</h2>
+          <p>
+            Ensure that you have Flutter installed on your device, and have
+            downloaded a Windows, MacOS, iOS or Android emulator if you wish to
+            run the app on any of the aforementioned operating systems.
+          </p>
+          <p>
+            Click
+            <a href="https://docs.flutter.dev/get-started/install">here</a> to
+            find out how to install Flutter on your device (do note that Dart is
+            automatically installed when you install the Flutter SDK through the
+            link above; you DO NOT need to install Dart manually using this
+            method).
+          </p>
+          <p>
+            We are currently using Flutter 3.10.1 (with Dart 3.0.1 included) on
+            our development machines. We also tested the app on an iOS and
+            Android emulator on both Windows and MacOS. Your mileage may vary
+            should you choose to use an older version of flutter in the app.
+          </p>
+          <h2 id="usage">Usage</h2>
+          <p>
+            Click
+            <a
+              href="https://docs.flutter.dev/get-started/editor?tab=androidstudio"
+              >here</a
+            >
+            to find out how to set up your favourite IDE or code editor for use
+            with Flutter and Dart.
+          </p>
+          <p>
+            To run the app, simply navigate to
+            <a href="./lib/main.dart">lib/main.dart</a> and run the file. If
+            successful, the app should compile and be properly emulated in your
+            emulator of choice.
+          </p>
+          <p>
+            Do note that you should only run
+            <a href="./lib/main.dart">lib/main.dart</a> as it is the entry point
+            to the application. Should you decide to use any other Dart files as
+            the entry point to the application, errors may occur.
+          </p>
+          <h2 id="issues-and-bugs">Issues and Bugs</h2>
+          <p>
+            Spot a bug? Let us know by launching a Bug Report at the
+            <a href="https://github.com/asdfghjkxd/travela/issues">Issues tab</a
+            >! Your report will help us create a better app experience for you
+            and fellow users of the app!
+          </p>
+          <h2 id="license">License</h2>
+          <p>
+            Released under <a href="/LICENSE">MIT</a> by
+            <a href="https://github.com/asdfghjkxd">@asdfghjkxd</a> and
+            <a href="https://github.com/craigtonlian">@craigtonlian</a>
+          </p>
+        </section>
 
-<body data-base-href="" data-using-base-href="false" class="light-theme">
-
-<div id="overlay-under-drawer"></div>
-
-<header id="title">
-  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
-  <ol class="breadcrumbs gt-separated dark hidden-xs">
-    <li class="self-crumb">travela package</li>
-  </ol>
-  <div class="self-name">travela</div>
-  <form class="search navbar-right" role="search">
-    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
-  </form>
-  <div class="toggle" id="theme-button">
-    <label for="theme">
-      <input type="checkbox" id="theme" value="light-theme">
-      <span id="dark-theme-button" class="material-symbols-outlined">
-        brightness_4
-      </span>
-      <span id="light-theme-button" class="material-symbols-outlined">
-        brightness_5
-      </span>
-    </label>
-  </div>
-</header>
-<main>
-
-  <div id="dartdoc-main-content" class="main-content">
-      
-<section class="desc markdown">
-  <h1 id="travela">travela</h1>
-<p><a href="https://github.com/asdfghjkxd/travela/releases/"><img src="https://img.shields.io/github/release/asdfghjkxd/travela?include_prereleases=&amp;sort=semver&amp;color=blue" alt="GitHub release"></a>
-<a href="#license"><img src="https://img.shields.io/badge/License-MIT-blue" alt="License"></a>
-<a href="https://github.com/asdfghjkxd/travela/issues"><img src="https://img.shields.io/github/issues/asdfghjkxd/travela" alt="issues - travela"></a>
-<a href="https://codecov.io/gh/asdfghjkxd/travela"><img src="https://codecov.io/gh/asdfghjkxd/travela/branch/main/graph/badge.svg?token=3YB2NRDEGM" alt="codecov"></a></p>
-<p><em>Just Travel La!</em></p>
-<blockquote>
-<p>Your collaborative trip planner app!</p>
-</blockquote>
-<p align="center">
-<img src="assets/readme/home_page.png" width="300" height="650">
-</p>
-<h2 id="made-with">Made With</h2>
-<p align="center">
-<a href="https://dart.dev/"><img src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&amp;logo=dart&amp;logoColor=white"></a>
-<a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&amp;logo=Firebase&amp;logoColor=white"></a>
-<a href="https://flutter.dev/"><img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&amp;logo=Flutter&amp;logoColor=white"></a>
-</p><p>
-</p><p align="center">
-<a href="https://codecov.io/gh/asdfghjkxd/travela">
-<img src="https://codecov.io/gh/asdfghjkxd/travela/branch/main/graph/badge.svg?token=3YB2NRDEGM">
-</a>
-</p>
-<h2 id="table-of-contents">Table of Contents</h2>
-<ul>
-<li><a href="https://github.com/asdfghjkxd/travela#about">About</a></li>
-<li><a href="https://github.com/asdfghjkxd/travela#pitch">Pitch</a></li>
-<li><a href="https://github.com/asdfghjkxd/travela#features">Features</a></li>
-<li><a href="https://github.com/asdfghjkxd/travela#install">Install</a></li>
-<li><a href="https://github.com/asdfghjkxd/travela#usage">Usage</a></li>
-<li><a href="https://github.com/asdfghjkxd/travela#diagrams">Diagrams</a></li>
-<li><a href="https://github.com/asdfghjkxd/travela#issues-and-bugs">Issues and Bugs</a></li>
-<li><a href="https://github.com/asdfghjkxd/travela#license">License</a></li>
-</ul>
-<h2 id="about">About</h2>
-<p>Want to plan a trip with your friends, but you guys just can't decide on what places to visit? Or perhaps you guys cannot seem to find a way to track your expenses on your trip? Or maybe you guys just cannot seem to find the right time to come together to throughly plan out the trip?</p>
-<p>Well, fear no more, for <strong>travela</strong> is here!</p>
-<p>Our app allows you to quickly and seamlessly collaborate with your friends to plan out your trip in detail, from minutae such as how to obtain the local public transport card, to the big ticket items such as your plane tickets and hotel bookings.</p>
-<p>It also allows you to track your expenses by setting trip-specific budgets, eliminating the mental gymnastics needed to calculate the amount of money one owes another in the group; it is all in the app!</p>
-<p>So, what are you waiting for? Download the app now and start your next great adventure!</p>
-<h2 id="pitch">Pitch</h2>
-<p>Here are the poster and video which we used for our pitch:</p>
-<h3 id="poster">Poster</h3>
-<p align="center">
-<img src="assets/readme/poster.png" width="550" height="777">
-</p>
-<h3 id="video">Video</h3>
-<p><a href="https://github.com/asdfghjkxd/travela/assets/73705042/03623d12-29a1-4586-9bc7-810b8a0be25b">github.com/asdfghjkxd/travela/assets/73705042/03623d12-29a1-4586-9bc7-810b8a0be25b</a></p>
-<h2 id="features">Features</h2>
-<p>Some of the features of the app include:</p>
-<ul>
-<li><strong>User Authentication and Customisation</strong>
-<ul>
-<li>Log in securely with Firebase Authentication, using your favourite and trusted Accounts from Google, Apple and Facebook</li>
-<li>Seamlessly collaborate with other users of the app in real-time</li>
-<li>Customise your profile to make the experience uniquely yours</li>
-</ul>
-</li>
-<li><strong>Document Organisation</strong>
-<ul>
-<li>Upload your important travel documents and access them on the go</li>
-<li>Label documents and group documents up into folders for greater organisation of your most important travel documents</li>
-<li>Protect your most sensitive data by encrypting your data with a password or with your device's biometric scanners</li>
-</ul>
-</li>
-<li><strong>Expenditure Tracking</strong>
-<ul>
-<li>Set trip budgets and set alerts and reminders to stay on budget</li>
-<li>Track expenses for your trips by creating expense entries for said trip</li>
-<li>Visualise your expenses with easy-to-understand charts and graphs</li>
-</ul>
-</li>
-<li><strong>Itinerary Planning</strong>
-<ul>
-<li>Location-based suggestions on possible places of interest depending on the location of your trip</li>
-<li>Discuss and share potential places of interest to visit for future trips with <strong>Idea Boards</strong></li>
-<li>Plan out your trip in detail with your loved ones</li>
-<li>Integration with Google Maps to visualise the routes to take while on your trip</li>
-</ul>
-</li>
-<li><strong>Weather Forecasting</strong>
-<ul>
-<li>Find out more about the weather conditions at your destination to allow for better planning</li>
-</ul>
-</li>
-</ul>
-<p>To find out more, click <a href="https://github.com/asdfghjkxd/travela/wiki">here</a> to go to the Wiki where more information about the design choices and documentation of the features are located at!</p>
-<p>Alternatively, you may navigate to the folders nested within <a href="lib"><code>lib</code></a> and read the <code>README.md</code> files for more information about the files and classes within the folder!</p>
-<h2 id="install">Install</h2>
-<p>Ensure that you have Flutter installed on your device, and have downloaded a Windows, MacOS, iOS or Android emulator if you wish to run the app on any of the aforementioned operating systems.</p>
-<p>Click <a href="https://docs.flutter.dev/get-started/install">here</a> to find out how to install Flutter on your device (do note that Dart is automatically installed when you install the Flutter SDK through the link above; you DO NOT need to install Dart manually using this method).</p>
-<p>We are currently using Flutter 3.10.1 (with Dart 3.0.1 included) on our development machines. We also tested the app on an iOS and Android emulator on both Windows and MacOS. Your mileage may vary should you choose to use an older version of flutter in the app.</p>
-<h2 id="usage">Usage</h2>
-<p>Click <a href="https://docs.flutter.dev/get-started/editor?tab=androidstudio">here</a> to find out how to set up your favourite IDE or code editor for use with Flutter and Dart.</p>
-<p>To run the app, simply navigate to <a href="./lib/main.dart">lib/main.dart</a> and run the file. If successful, the app should compile and be properly emulated in your emulator of choice.</p>
-<p>Do note that you should only run <a href="./lib/main.dart">lib/main.dart</a> as it is the entry point to the application. Should you decide to use any other Dart files as the entry point to the application, errors may occur.</p>
-<h2 id="diagrams">Diagrams</h2>
-<p>Here is a sneak peak into how the app looks!</p>
-<h3 id="splash-screen">Splash Screen</h3>
-<p align="center">
-<img src="assets/readme/splash_screen.png" width="300" height="675">
-</p>
-<h3 id="home-page">Home Page</h3>
-<p align="center">
-<img src="assets/readme/home_page.png" width="300" height="675">
-</p><p>
-</p><h3 id="documents-page">Documents Page</h3>
-<p align="center">
-<img src="assets/readme/documents_page.png" width="300" height="675">
-<img src="assets/readme/documents_page_alt.png" width="300" height="675">
-</p>
-<h3 id="folders-and-documents">Folders and Documents</h3>
-<p align="center">
-<img src="assets/readme/trip_page.png" width="300" height="675">
-<img src="assets/readme/folder_page.png" width="300" height="675">
-</p>
-<h3 id="expenses-page">Expenses Page</h3>
-<p align="center">
-<img src="assets/readme/expenses_page_trip.png" width="300" height="675">
-<img src="assets/readme/expenses_page.png" width="300" height="675">
-</p>
-<h3 id="itineraries-page">Itineraries Page</h3>
-<p align="center">
-<img src="assets/readme/itineraries_page.png" width="300" height="675">
-</p>
-<h3 id="profile-page">Profile Page</h3>
-<p align="center">
-<img src="assets/readme/profile_page.png" width="300" height="675">
-</p>
-<h2 id="issues-and-bugs">Issues and Bugs</h2>
-<p>Spot a bug? Let us know by launching a Bug Report at the <a href="https://github.com/asdfghjkxd/travela/issues">Issues tab</a>! Your report will help us create a better app experience for you and fellow users of the app!</p>
-<h2 id="license">License</h2>
-<p>Released under <a href="/LICENSE">MIT</a> by <a href="https://github.com/asdfghjkxd">@asdfghjkxd</a> and <a href="https://github.com/craigtonlian">@craigtonlian</a></p>
-</section>
-
-
-      <section class="summary">
+        <section class="summary">
           <h2>Libraries</h2>
-        <dl>
-          <dt id="components">
-  <span class="name"><a href="components/components-library.html">components</a></span> 
+          <dl>
+            <dt id="components">
+              <span class="name"
+                ><a href="components/components-library.html"
+                  >components</a
+                ></span
+              >
+            </dt>
+            <dd>
+              This library contains the different reusable components that are
+              used throughout the app.
+            </dd>
 
-</dt>
-<dd>This library contains the different reusable components that are used
-throughout the app.
-</dd>
+            <dt id="controllers">
+              <span class="name"
+                ><a href="controllers/controllers-library.html"
+                  >controllers</a
+                ></span
+              >
+            </dt>
+            <dd>
+              This library contains the different Getx Controllers that are used
+              throughout the app.
+            </dd>
 
-          <dt id="controllers">
-  <span class="name"><a href="controllers/controllers-library.html">controllers</a></span> 
+            <dt id="enums">
+              <span class="name"
+                ><a href="enums/enums-library.html">enums</a></span
+              >
+            </dt>
+            <dd>
+              This library contains the different enums used throughout the
+              application.
+            </dd>
 
-</dt>
-<dd>This library contains the different Getx Controllers that are used
-throughout the app.
-</dd>
+            <dt id="firebase_options">
+              <span class="name"
+                ><a href="firebase_options/firebase_options-library.html"
+                  >firebase_options</a
+                ></span
+              >
+            </dt>
+            <dd></dd>
 
-          <dt id="enums">
-  <span class="name"><a href="enums/enums-library.html">enums</a></span> 
+            <dt id="main">
+              <span class="name"
+                ><a href="main/main-library.html">main</a></span
+              >
+            </dt>
+            <dd></dd>
 
-</dt>
-<dd>This library contains the different enums used throughout the application.
-</dd>
+            <dt id="models">
+              <span class="name"
+                ><a href="models/models-library.html">models</a></span
+              >
+            </dt>
+            <dd>
+              This library contains the different Model classes that are used
+              throughout the app.
+            </dd>
 
-          <dt id="firebase_options">
-  <span class="name"><a href="firebase_options/firebase_options-library.html">firebase_options</a></span> 
+            <dt id="services">
+              <span class="name"
+                ><a href="services/services-library.html">services</a></span
+              >
+            </dt>
+            <dd>
+              This library contains the different Getx Services that are used
+              throughout the app.
+            </dd>
+          </dl>
+        </section>
+      </div>
+      <!-- /.main-content -->
 
-</dt>
-<dd>
-</dd>
+      <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+        <header id="header-search-sidebar" class="hidden-l">
+          <form class="search-sidebar" role="search">
+            <input
+              type="text"
+              id="search-sidebar"
+              autocomplete="off"
+              disabled
+              class="form-control typeahead"
+              placeholder="Loading search..."
+            />
+          </form>
+        </header>
 
-          <dt id="main">
-  <span class="name"><a href="main/main-library.html">main</a></span> 
+        <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+          <li class="self-crumb">travela package</li>
+        </ol>
 
-</dt>
-<dd>
-</dd>
+        <h5 class="hidden-xs">
+          <span class="package-name">travela</span>
+          <span class="package-kind">package</span>
+        </h5>
+        <ol>
+          <li class="section-title">Libraries</li>
+          <li><a href="components/components-library.html">components</a></li>
+          <li>
+            <a href="controllers/controllers-library.html">controllers</a>
+          </li>
+          <li><a href="enums/enums-library.html">enums</a></li>
+          <li>
+            <a href="firebase_options/firebase_options-library.html"
+              >firebase_options</a
+            >
+          </li>
+          <li><a href="main/main-library.html">main</a></li>
+          <li><a href="models/models-library.html">models</a></li>
+          <li><a href="services/services-library.html">services</a></li>
+        </ol>
+      </div>
 
-          <dt id="models">
-  <span class="name"><a href="models/models-library.html">models</a></span> 
+      <div
+        id="dartdoc-sidebar-right"
+        class="sidebar sidebar-offcanvas-right"
+      ></div>
+    </main>
 
-</dt>
-<dd>This library contains the different Model classes that are used
-throughout the app.
-</dd>
+    <footer>
+      <span class="no-break"> travela 0.0.0-unknown </span>
+    </footer>
 
-          <dt id="services">
-  <span class="name"><a href="services/services-library.html">services</a></span> 
-
-</dt>
-<dd>This library contains the different Getx Services that are used
-throughout the app.
-</dd>
-
-        </dl>
-      </section>
-
-  </div> <!-- /.main-content -->
-
-  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
-    <header id="header-search-sidebar" class="hidden-l">
-  <form class="search-sidebar" role="search">
-    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
-  </form>
-</header>
-
-<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
-  <li class="self-crumb">travela package</li>
-</ol>
-
-
-    <h5 class="hidden-xs"><span class="package-name">travela</span> <span class="package-kind">package</span></h5>
-    <ol>
-      <li class="section-title">Libraries</li>
-      <li><a href="components/components-library.html">components</a></li>
-      <li><a href="controllers/controllers-library.html">controllers</a></li>
-      <li><a href="enums/enums-library.html">enums</a></li>
-      <li><a href="firebase_options/firebase_options-library.html">firebase_options</a></li>
-      <li><a href="main/main-library.html">main</a></li>
-      <li><a href="models/models-library.html">models</a></li>
-      <li><a href="services/services-library.html">services</a></li>
-</ol>
-
-  </div>
-
-  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
-  </div>
-
-</main>
-
-<footer>
-  <span class="no-break">
-    travela
-      0.0.0-unknown
-  </span>
-
-  
-</footer>
-
-
-
-<script src="static-assets/highlight.pack.js?v1"></script>
-<script src="static-assets/docs.dart.js"></script>
-
-
-
-</body>
-
+    <script src="static-assets/highlight.pack.js?v1"></script>
+    <script src="static-assets/docs.dart.js"></script>
+  </body>
 </html>
-
