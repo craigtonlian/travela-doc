@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the Document class from the models library, for the Dart programming language.">
+  <title>Document class - models library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">travela</a></li>
+    <li><a href="../models/models-library.html">models</a></li>
+    <li class="self-crumb">Document class</li>
+  </ol>
+  <div class="self-name">Document</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">Document</span> class 
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>Represents a Document object within the database.</p>
+<p>Attributes:</p>
+<ul>
+<li><a href="../models/Document/documentId.html">documentId</a> - The Document ID</li>
+<li><a href="../models/Document/userId.html">userId</a> - The User ID of the owner of the Document</li>
+<li><a href="../models/Document/name.html">name</a> - The name of the Document</li>
+<li><a href="../models/Document/isStarred.html">isStarred</a> - The Starred status of the Document</li>
+<li><a href="../models/Document/color.html">color</a> - The color of the tile used to display the tile</li>
+<li><a href="../models/Document/storageUrl.html">storageUrl</a> - The Document's cloud storage URL/URI</li>
+<li><a href="../models/Document/usersList.html">usersList</a> - The list of Users who have access to this Document</li>
+<li><a href="../models/Document/creationDate.html">creationDate</a> - The date of creation of the Document</li>
+<li><a href="../models/Document/lastUpdated.html">lastUpdated</a> - A running tally of the last time the Document was updated</li>
+</ul>
+</section>
+
+
+    <section>
+      <dl class="dl-horizontal">
+        
+  <dt>Inheritance</dt>
+  <dd>
+    <ul class="gt-separated dark clazz-relationships">
+      <li><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></li>
+        <li><a href="../models/Collections-class.html">Collections</a></li>
+      <li>Document</li>
+    </ul>
+  </dd>
+
+        
+  <dt>Implemented types</dt>
+  <dd>
+    <ul class="comma-separated clazz-relationships">
+        <li><a href="../models/Colorable-class.html">Colorable</a></li>
+    </ul>
+  </dd>
+        
+
+
+
+        
+
+
+      </dl>
+    </section>
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="Document.fromFirestore" class="callable">
+          <span class="name"><a href="../models/Document/Document.fromFirestore.html">Document.fromFirestore</a></span><span class="signature">(<span class="parameter" id="fromFirestore-param-snapshot"><span class="type-annotation"><a href="https://pub.dev/documentation/cloud_firestore/4.8.3/cloud_firestore/DocumentSnapshot-class.html">DocumentSnapshot</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">snapshot</span>, </span><span class="parameter" id="fromFirestore-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/cloud_firestore/4.8.3/cloud_firestore/SnapshotOptions-class.html">SnapshotOptions</a>?</span> <span class="parameter-name">options</span></span>)</span>
+        </dt>
+        <dd>
+          Factory method to convert JSON responses into Document objects.
+            <div class="constructor-modifier features">factory</div>
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="color" class="property">
+  <span class="name"><a href="../models/Document/color.html">color</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> 
+
+</dt>
+<dd>
+  Color of the Colorable Widget. Default color is Teal.
+  <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="creationDate" class="property">
+  <span class="name"><a href="../models/Document/creationDate.html">creationDate</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/DateTime-class.html">DateTime</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="documentId" class="property">
+  <span class="name"><a href="../models/Document/documentId.html">documentId</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features"><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="isStarred" class="property">
+  <span class="name"><a href="../models/Document/isStarred.html">isStarred</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="lastUpdated" class="property">
+  <span class="name"><a href="../models/Document/lastUpdated.html">lastUpdated</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/DateTime-class.html">DateTime</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="name" class="property">
+  <span class="name"><a href="../models/Document/name.html">name</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features"><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="service" class="property">
+  <span class="name"><a href="../models/Document/service.html">service</a></span>
+  <span class="signature">&#8594; <a href="../services/DatabaseService-class.html">DatabaseService</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="storageUrl" class="property">
+  <span class="name"><a href="../models/Document/storageUrl.html">storageUrl</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="userId" class="property">
+  <span class="name"><a href="../models/Document/userId.html">userId</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="usersList" class="property">
+  <span class="name"><a href="../models/Document/usersList.html">usersList</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="changeColor" class="callable">
+  <span class="name"><a href="../models/Document/changeColor.html">changeColor</a></span><span class="signature">(<wbr><span class="parameter" id="changeColor-param-color"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">color</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Changes the color of the tile used to represent this Folder.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="changeColorFromARGB" class="callable">
+  <span class="name"><a href="../models/Document/changeColorFromARGB.html">changeColorFromARGB</a></span><span class="signature">(<wbr><span class="parameter" id="changeColorFromARGB-param-color"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> <span class="parameter-name">color</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Changes the color of the tile used to represent this Folder.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="getCollectionReference" class="callable">
+  <span class="name"><a href="../models/Document/getCollectionReference.html">getCollectionReference</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/cloud_firestore/4.8.3/cloud_firestore/CollectionReference-class.html">CollectionReference</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models/Document-class.html">Document</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Returns the Firestore Collection Reference for the parent collection
+which this Document belongs to.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="getDocReference" class="callable">
+  <span class="name"><a href="../models/Document/getDocReference.html">getDocReference</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/cloud_firestore/4.8.3/cloud_firestore/DocumentReference-class.html">DocumentReference</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models/Document-class.html">Document</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Returns the Firestore Document Reference which refers to this Document.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a nonexistent method or property is accessed.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="repr" class="callable">
+  <span class="name"><a href="../models/Document/repr.html">repr</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  String representation of the Document object. This is used only for
+the search feature within the app.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="toFirestore" class="callable">
+  <span class="name"><a href="../models/Document/toFirestore.html">toFirestore</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Returns a Map from a Document instance to be sent to the server.
+  
+
+</dd>
+
+        <dt id="toString" class="callable">
+  <span class="name"><a href="../models/Document/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Official String representation of the Document object.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+  <section class="summary offset-anchor" id="static-methods">
+    <h2>Static Methods</h2>
+    <dl class="callables">
+        <dt id="construct" class="callable">
+  <span class="name"><a href="../models/Document/construct.html">construct</a></span><span class="signature">(<wbr><span class="parameter" id="construct-param-documentId">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">documentId</span>, </span><span class="parameter" id="construct-param-userId"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">userId</span>, </span><span class="parameter" id="construct-param-isStarred"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">isStarred</span> = <span class="default-value">false</span>, </span><span class="parameter" id="construct-param-name"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span>, </span><span class="parameter" id="construct-param-color"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">color</span> = <span class="default-value">Colors.teal</span>, </span><span class="parameter" id="construct-param-storageUrl"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">storageUrl</span>, </span><span class="parameter" id="construct-param-usersList"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">usersList</span>, </span><span class="parameter" id="construct-param-lastUpdated"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/DateTime-class.html">DateTime</a></span> <span class="parameter-name">lastUpdated</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="../models/Document-class.html">Document</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Public factory method that constructs a valid Document instance.
+  
+
+</dd>
+
+        <dt id="constructWith" class="callable">
+  <span class="name"><a href="../models/Document/constructWith.html">constructWith</a></span><span class="signature">(<wbr><span class="parameter" id="constructWith-param-document"><span class="type-annotation"><a href="../models/Document-class.html">Document</a></span> <span class="parameter-name">document</span>, </span><span class="parameter" id="constructWith-param-documentId">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">documentId</span>, </span><span class="parameter" id="constructWith-param-userId"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">userId</span>, </span><span class="parameter" id="constructWith-param-name"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">name</span>, </span><span class="parameter" id="constructWith-param-isStarred"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">isStarred</span>, </span><span class="parameter" id="constructWith-param-color"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">color</span>, </span><span class="parameter" id="constructWith-param-storageUrl"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">storageUrl</span>, </span><span class="parameter" id="constructWith-param-usersList"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">usersList</span>, </span><span class="parameter" id="constructWith-param-lastUpdated"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/DateTime-class.html">DateTime</a>?</span> <span class="parameter-name">lastUpdated</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="../models/Document-class.html">Document</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Public factory method that constructs a valid Document instance from
+another valid Document instance.
+  
+
+</dd>
+
+        <dt id="isValidFilename" class="callable">
+  <span class="name"><a href="../models/Document/isValidFilename.html">isValidFilename</a></span><span class="signature">(<wbr><span class="parameter" id="isValidFilename-param-filename"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">filename</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Checks if an input name is valid.
+  
+
+</dd>
+
+    </dl>
+  </section>
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">travela</a></li>
+  <li><a href="../models/models-library.html">models</a></li>
+  <li class="self-crumb">Document class</li>
+</ol>
+
+
+    <h5>models library</h5>
+    <ol>
+      <li class="section-title"><a href="../models/models-library.html#classes">Classes</a></li>
+        <li><a href="../models/Airport-class.html">Airport</a></li>
+        <li><a href="../models/Collections-class.html">Collections</a></li>
+        <li><a href="../models/Colorable-class.html">Colorable</a></li>
+        <li><a href="../models/ContainerCollections-class.html">ContainerCollections</a></li>
+        <li><a href="../models/Document-class.html">Document</a></li>
+        <li><a href="../models/Expense-class.html">Expense</a></li>
+        <li><a href="../models/Folder-class.html">Folder</a></li>
+        <li><a href="../models/Hotel-class.html">Hotel</a></li>
+        <li><a href="../models/Itinerary-class.html">Itinerary</a></li>
+        <li><a href="../models/Location-class.html">Location</a></li>
+        <li><a href="../models/LocationAutoComplete-class.html">LocationAutoComplete</a></li>
+        <li><a href="../models/PlaceOfInterest-class.html">PlaceOfInterest</a></li>
+        <li><a href="../models/SplashInfo-class.html">SplashInfo</a></li>
+        <li><a href="../models/Trip-class.html">Trip</a></li>
+        <li><a href="../models/User-class.html">User</a></li>
+
+
+
+
+
+
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+        <li class="section-title"><a href="../models/Document-class.html#constructors">Constructors</a></li>
+          <li><a href="../models/Document/Document.fromFirestore.html">fromFirestore</a></li>
+
+
+        <li class="section-title">
+          <a href="../models/Document-class.html#instance-properties">Properties</a>
+        </li>
+          <li><a href="../models/Document/color.html">color</a></li>
+          <li><a href="../models/Document/creationDate.html">creationDate</a></li>
+          <li><a href="../models/Document/documentId.html">documentId</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+          <li><a href="../models/Document/isStarred.html">isStarred</a></li>
+          <li><a href="../models/Document/lastUpdated.html">lastUpdated</a></li>
+          <li><a href="../models/Document/name.html">name</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+          <li><a href="../models/Document/service.html">service</a></li>
+          <li><a href="../models/Document/storageUrl.html">storageUrl</a></li>
+          <li><a href="../models/Document/userId.html">userId</a></li>
+          <li><a href="../models/Document/usersList.html">usersList</a></li>
+
+        <li class="section-title"><a href="../models/Document-class.html#instance-methods">Methods</a></li>
+          <li><a href="../models/Document/changeColor.html">changeColor</a></li>
+          <li><a href="../models/Document/changeColorFromARGB.html">changeColorFromARGB</a></li>
+          <li><a href="../models/Document/getCollectionReference.html">getCollectionReference</a></li>
+          <li><a href="../models/Document/getDocReference.html">getDocReference</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+          <li><a href="../models/Document/repr.html">repr</a></li>
+          <li><a href="../models/Document/toFirestore.html">toFirestore</a></li>
+          <li><a href="../models/Document/toString.html">toString</a></li>
+
+        <li class="section-title inherited"><a href="../models/Document-class.html#operators">Operators</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+        <li class="section-title"><a href="../models/Document-class.html#static-methods">Static methods</a></li>
+          <li><a href="../models/Document/construct.html">construct</a></li>
+          <li><a href="../models/Document/constructWith.html">constructWith</a></li>
+          <li><a href="../models/Document/isValidFilename.html">isValidFilename</a></li>
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    travela
+      0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

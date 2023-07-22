@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the constructFromFirebase method from the User class, for the Dart programming language.">
+  <title>constructFromFirebase method - User class - models library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">travela</a></li>
+    <li><a href="../../models/models-library.html">models</a></li>
+    <li><a href="../../models/User-class.html">User</a></li>
+    <li class="self-crumb">constructFromFirebase static method</li>
+  </ol>
+  <div class="self-name">constructFromFirebase</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">constructFromFirebase</span> static method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="../../models/User-class.html">User</a></span>
+<span class="name ">constructFromFirebase</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="constructFromFirebase-param-user"><span class="type-annotation"><a href="https://pub.dev/documentation/firebase_auth/4.7.1/firebase_auth/User-class.html">User</a></span> <span class="parameter-name">user</span></span></li>
+</ol>)
+
+      
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Alternative method that constructs a User instance from a Firebase Auth
+User instance.</p>
+<p>Parameter:</p>
+<ul>
+<li><code>user</code> - Firebase Auth User instance</li>
+</ul>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">static User constructFromFirebase(travela_user.User user) {
+  return User._(
+      userId: user.uid,
+      firstName: &#39;&#39;,
+      lastName: &#39;&#39;,
+      displayName:
+          user.displayName ?? user.providerData.first.displayName ?? &#39;&#39;,
+      photoUrl: user.photoURL ?? &#39;&#39;,
+      email: user.email ?? &#39;&#39;,
+      usersList: [],
+      requestsList: [],
+      tripsList: [],
+      documentsList: [],
+      creationDate: user.metadata.creationTime ?? DateTime.now());
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">travela</a></li>
+  <li><a href="../../models/models-library.html">models</a></li>
+  <li><a href="../../models/User-class.html">User</a></li>
+  <li class="self-crumb">constructFromFirebase static method</li>
+</ol>
+
+
+    <h5>User class</h5>
+    <ol>
+
+        <li class="section-title"><a href="../../models/User-class.html#constructors">Constructors</a></li>
+          <li><a href="../../models/User/User.fromFirestore.html">fromFirestore</a></li>
+
+
+        <li class="section-title">
+          <a href="../../models/User-class.html#instance-properties">Properties</a>
+        </li>
+          <li><a href="../../models/User/creationDate.html">creationDate</a></li>
+          <li><a href="../../models/User/displayName.html">displayName</a></li>
+          <li><a href="../../models/User/documentsList.html">documentsList</a></li>
+          <li><a href="../../models/User/email.html">email</a></li>
+          <li><a href="../../models/User/firstName.html">firstName</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+          <li><a href="../../models/User/lastName.html">lastName</a></li>
+          <li><a href="../../models/User/photoUrl.html">photoUrl</a></li>
+          <li><a href="../../models/User/requestsList.html">requestsList</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+          <li><a href="../../models/User/service.html">service</a></li>
+          <li><a href="../../models/User/tripsList.html">tripsList</a></li>
+          <li><a href="../../models/User/userId.html">userId</a></li>
+          <li><a href="../../models/User/usersList.html">usersList</a></li>
+
+        <li class="section-title"><a href="../../models/User-class.html#instance-methods">Methods</a></li>
+          <li><a href="../../models/User/getCollectionReference.html">getCollectionReference</a></li>
+          <li><a href="../../models/User/getDocReference.html">getDocReference</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+          <li><a href="../../models/User/repr.html">repr</a></li>
+          <li><a href="../../models/User/toFirestore.html">toFirestore</a></li>
+          <li><a href="../../models/User/toString.html">toString</a></li>
+
+        <li class="section-title inherited"><a href="../../models/User-class.html#operators">Operators</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+        <li class="section-title"><a href="../../models/User-class.html#static-methods">Static methods</a></li>
+          <li><a href="../../models/User/construct.html">construct</a></li>
+          <li><a href="../../models/User/constructFromFirebase.html">constructFromFirebase</a></li>
+          <li><a href="../../models/User/constructWith.html">constructWith</a></li>
+          <li><a href="../../models/User/constructWithFirebaseUser.html">constructWithFirebaseUser</a></li>
+          <li><a href="../../models/User/import.html">import</a></li>
+          <li><a href="../../models/User/importWith.html">importWith</a></li>
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    travela
+      0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

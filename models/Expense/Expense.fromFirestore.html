@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the Expense.fromFirestore constructor from Class Expense from the models library, for the Dart programming language.">
+  <title>Expense.fromFirestore constructor - Expense - models library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">travela</a></li>
+    <li><a href="../../models/models-library.html">models</a></li>
+    <li><a href="../../models/Expense-class.html">Expense</a></li>
+    <li class="self-crumb">Expense.fromFirestore factory constructor</li>
+  </ol>
+  <div class="self-name">Expense.fromFirestore</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-constructor">Expense.fromFirestore</span> constructor 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+      <span class="name ">Expense.fromFirestore</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="fromFirestore-param-snapshot"><span class="type-annotation"><a href="https://pub.dev/documentation/cloud_firestore/4.8.3/cloud_firestore/DocumentSnapshot-class.html">DocumentSnapshot</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">snapshot</span>, </span></li>
+<li><span class="parameter" id="fromFirestore-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/cloud_firestore/4.8.3/cloud_firestore/SnapshotOptions-class.html">SnapshotOptions</a>?</span> <span class="parameter-name">options</span></span></li>
+</ol>)
+    </section>
+
+    
+<section class="desc markdown">
+  <p>Factory method to convert JSON responses into Expense objects.</p>
+<p>Successor of the import...() functions.</p>
+<p>Parameters:</p>
+<ul>
+<li><code>snapshot</code> - A DocumentSnapshot object from the Server</li>
+<li><code>options</code> - An optional SnapshotOptions object</li>
+</ul>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">factory Expense.fromFirestore(DocumentSnapshot&lt;Map&lt;String, dynamic&gt;&gt; snapshot,
+    SnapshotOptions? options) {
+  final data = snapshot.data();
+
+  return Expense._(
+      expenseId: snapshot.id,
+      userId: data?[&#39;userId&#39;],
+      tripId: data?[&#39;tripId&#39;],
+      description: data?[&#39;description&#39;],
+      currency: data?[&#39;currency&#39;],
+      value: data?[&#39;value&#39;],
+      entryDate: data?[&#39;entryDate&#39;]?.toDate(),
+      creationDate: data?[&#39;creationDate&#39;]?.toDate(),
+      lastUpdated: data?[&#39;lastUpdated&#39;]?.toDate());
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">travela</a></li>
+  <li><a href="../../models/models-library.html">models</a></li>
+  <li><a href="../../models/Expense-class.html">Expense</a></li>
+  <li class="self-crumb">Expense.fromFirestore factory constructor</li>
+</ol>
+
+
+    <h5>Expense class</h5>
+    <ol>
+
+        <li class="section-title"><a href="../../models/Expense-class.html#constructors">Constructors</a></li>
+          <li><a href="../../models/Expense/Expense.fromFirestore.html">fromFirestore</a></li>
+
+
+        <li class="section-title">
+          <a href="../../models/Expense-class.html#instance-properties">Properties</a>
+        </li>
+          <li><a href="../../models/Expense/creationDate.html">creationDate</a></li>
+          <li><a href="../../models/Expense/currency.html">currency</a></li>
+          <li><a href="../../models/Expense/description.html">description</a></li>
+          <li><a href="../../models/Expense/entryDate.html">entryDate</a></li>
+          <li><a href="../../models/Expense/expenseId.html">expenseId</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+          <li><a href="../../models/Expense/lastUpdated.html">lastUpdated</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+          <li><a href="../../models/Expense/service.html">service</a></li>
+          <li><a href="../../models/Expense/tripId.html">tripId</a></li>
+          <li><a href="../../models/Expense/userId.html">userId</a></li>
+          <li><a href="../../models/Expense/value.html">value</a></li>
+
+        <li class="section-title"><a href="../../models/Expense-class.html#instance-methods">Methods</a></li>
+          <li><a href="../../models/Expense/getCollectionReference.html">getCollectionReference</a></li>
+          <li><a href="../../models/Expense/getDocReference.html">getDocReference</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+          <li><a href="../../models/Expense/repr.html">repr</a></li>
+          <li><a href="../../models/Expense/toFirestore.html">toFirestore</a></li>
+          <li><a href="../../models/Expense/toString.html">toString</a></li>
+
+        <li class="section-title inherited"><a href="../../models/Expense-class.html#operators">Operators</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+        <li class="section-title"><a href="../../models/Expense-class.html#static-methods">Static methods</a></li>
+          <li><a href="../../models/Expense/construct.html">construct</a></li>
+          <li><a href="../../models/Expense/constructWith.html">constructWith</a></li>
+          <li><a href="../../models/Expense/import.html">import</a></li>
+          <li><a href="../../models/Expense/importWith.html">importWith</a></li>
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    travela
+      0.0.0-unknown
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
