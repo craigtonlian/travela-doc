@@ -88,7 +88,22 @@ the file as.</p>
         directory = await getApplicationDocumentsDirectory();
         var path = &#39;${directory.path}&#47;${document.name}&#39;;
         await OpenFile.open(path, type: lookupMimeType(path));
-        if (await File(
+        if (await Directory(
+                &#39;${directory.path}&#47;(A Document Being Saved By travela)&#39;)
+            .exists()) {
+          await Directory(
+                  &#39;${directory.path}&#47;(A Document Being Saved By travela)&#39;)
+              .delete();
+        }
+        return true;
+      } else if (Platform.isAndroid) {
+        directory = Directory(&#39;&#47;storage&#47;emulated&#47;0&#47;Download&#39;);
+        if (!await directory.exists()) {
+          directory = await getExternalStorageDirectory();
+        }
+        var path = &#39;${directory!.path}&#47;${document.name}&#39;;
+        await OpenFile.open(path, type: lookupMimeType(path));
+        if (await Directory(
                 &#39;${directory.path}&#47;(A Document Being Saved By travela)&#39;)
             .exists()) {
           await Directory(
@@ -97,13 +112,15 @@ the file as.</p>
         }
         return true;
       } else {
-        directory = Directory(&#39;&#47;storage&#47;emulated&#47;0&#47;Download&#39;);
-        if (!await directory.exists()) {
-          directory = await getExternalStorageDirectory();
-        }
-        var path = &#39;${directory!.path}&#47;${document.name}&#39;;
+        return false;
+      }
+    } else {
+      await Permission.manageExternalStorage.request();
+      if (Platform.isIOS) {
+        directory = await getApplicationDocumentsDirectory();
+        var path = &#39;${directory.path}&#47;${document.name}&#39;;
         await OpenFile.open(path, type: lookupMimeType(path));
-        if (await File(
+        if (await Directory(
                 &#39;${directory.path}&#47;(A Document Being Saved By travela)&#39;)
             .exists()) {
           await Directory(
@@ -111,9 +128,25 @@ the file as.</p>
               .delete();
         }
         return true;
+      } else if (Platform.isAndroid) {
+        directory = Directory(&#39;&#47;storage&#47;emulated&#47;0&#47;Download&#39;);
+        if (!await directory.exists()) {
+          directory = await getExternalStorageDirectory();
+        }
+        var path = &#39;${directory!.path}&#47;${document.name}&#39;;
+        await OpenFile.open(path, type: lookupMimeType(path));
+        if (await Directory(
+                &#39;${directory.path}&#47;(A Document Being Saved By travela)&#39;)
+            .exists()) {
+          await Directory(
+                  &#39;${directory.path}&#47;(A Document Being Saved By travela)&#39;)
+              .delete();
+        }
+        return true;
+      } else {
+        return false;
       }
     }
-    return false;
   } catch (e) {
     return false;
   }

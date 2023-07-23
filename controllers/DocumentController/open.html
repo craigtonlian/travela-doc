@@ -90,8 +90,16 @@ the file as.</p>
       await OpenFile.open(path, type: lookupMimeType(path));
 
       return true;
+    } else {
+      await Permission.manageExternalStorage.request();
+
+      var directory = await getTemporaryDirectory();
+      var path = &#39;${directory.path}&#47;${document.name}&#39;;
+
+      await Dio().downloadUri(uri, &#39;${directory.path}&#47;${document.name}&#39;);
+      await OpenFile.open(path, type: lookupMimeType(path));
+      return true;
     }
-    return false;
   } catch (e) {
     return false;
   }

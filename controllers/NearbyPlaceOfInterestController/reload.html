@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the NearbyPlaceOfInterestController constructor from Class NearbyPlaceOfInterestController from the controllers library, for the Dart programming language.">
-  <title>NearbyPlaceOfInterestController constructor - NearbyPlaceOfInterestController - controllers library - Dart API</title>
+  <meta name="description" content="API docs for the reload method from the NearbyPlaceOfInterestController class, for the Dart programming language.">
+  <title>reload method - NearbyPlaceOfInterestController class - controllers library - Dart API</title>
 
 
   
@@ -31,9 +31,9 @@
     <li><a href="../../index.html">travela</a></li>
     <li><a href="../../controllers/controllers-library.html">controllers</a></li>
     <li><a href="../../controllers/NearbyPlaceOfInterestController-class.html">NearbyPlaceOfInterestController</a></li>
-    <li class="self-crumb">NearbyPlaceOfInterestController constructor</li>
+    <li class="self-crumb">reload method</li>
   </ol>
-  <div class="self-name">NearbyPlaceOfInterestController</div>
+  <div class="self-name">reload</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
@@ -53,25 +53,30 @@
 
   <div id="dartdoc-main-content" class="main-content">
       <div>
-<h1><span class="kind-constructor">NearbyPlaceOfInterestController</span> constructor 
+<h1><span class="kind-method">reload</span> method 
 </h1></div>
 
     <section class="multi-line-signature">
       
-      <span class="name ">NearbyPlaceOfInterestController</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="-param-location">{<span>required</span> <span class="type-annotation"><a href="../../models/Location-class.html">Location</a></span> <span class="parameter-name">location</span>}</span></li>
-</ol>)
-    </section>
 
+<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+<span class="name ">reload</span>(<wbr>)
+
+      
+
+    </section>
     
 <section class="desc markdown">
-  <p>Constructor for NearbyPlaceOfInterestController.</p>
+  <p>Reloads the Controller.</p>
 </section>
 
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">NearbyPlaceOfInterestController({required this.location});</code></pre>
+  <pre class="language-dart"><code class="language-dart">Future&lt;void&gt; reload() async {
+  await getNearbyPOI();
+}</code></pre>
 </section>
 
 
@@ -88,7 +93,7 @@
   <li><a href="../../index.html">travela</a></li>
   <li><a href="../../controllers/controllers-library.html">controllers</a></li>
   <li><a href="../../controllers/NearbyPlaceOfInterestController-class.html">NearbyPlaceOfInterestController</a></li>
-  <li class="self-crumb">NearbyPlaceOfInterestController constructor</li>
+  <li class="self-crumb">reload method</li>
 </ol>
 
 
@@ -144,7 +149,7 @@
 
 </ol>
 
-  </div><!--/.sidebar-offcanvas-left-->
+  </div><!--/.sidebar-offcanvas-->
 
   <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
   </div><!--/.sidebar-offcanvas-->
